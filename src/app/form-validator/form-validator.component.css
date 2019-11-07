@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Share+Tech+Mono&display=swap');
+
+.usernameContainer {
+  display: grid;
+  grid-template-rows: [ startTitle ] 32px [ endTitle startInput ] 72px [ endInput startError ] 40px [ endError startButton ] 48px [ endButton startLogs ] 200px [ endLogs startFooter ] auto [ endFooter ];
+  row-gap: 40px;
+  width: calc(width - 32px);
+  margin: 16px 32px 24px 32px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.title {
+  grid-row: startTitle / endTitle;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 8px 8px 32px 8px;
+}
+
+.inputArea {
+  grid-row: startInput / endInput;
+  font-size: 24px;
+  background-color: #e8e8e8;
+  border-radius: 8px;
+  margin: 8px 8px 16px 8px;
+}
+
+.error {
+  grid-row: startError / endError;
+  color: darkred;
+  font-weight: 800;
+}
+
+.buttonContainer {
+  grid-row: startButton / endButton;
+}
+
+.errorLoggingArea {
+  grid-row: startLogs / endLogs;
+  font-family: 'Share Tech Mono', monospace;
+  color: red;
+  background-color: #e8e8e8;
+  padding: 8px 24px 16px 24px;
+  margin: 0 0 8px 8px;
+  border-radius: 8px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin: 16px 24px 0 16px;
+  display: inline;
+}
+
+input { 
+  width: 150px;
+  height: 24px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+button { 
+  background-color: #09bdec;
+  color: #fbfbfb;
+  border: none;
+  margin: 0 0 16px 8px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button:hover {
+  padding: 10px 14px;
+  border: 2px solid black;
+}
+
+.reset {
+  background-color: red;
+}
+
+.error {
+  margin: 16px;
+  float: left;
+  padding: 8px;
+  color: red;
+  border: none;
+}

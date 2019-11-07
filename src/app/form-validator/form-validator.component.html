@@ -1,0 +1,19 @@
+<div class="usernameContainer">
+  <h2 class="title">Test Your Username Values</h2>
+    <div class="inputArea">
+    <label for="username">Username
+      <input type="text" [formControl]="username">
+    </label>
+    <div class="error" *ngIf="username.errors && username.touched">We don't allow those kinds of symbols here.</div>
+    </div>
+<div>
+<div class="buttonContainer">
+  <button type="button" class="check" (click)="checkUsername()">Check Username</button>
+  <button type="reset" class="reset" (click)="resetForm()">Reset Form</button>
+</div>
+<div class="errorLoggingArea">
+  <h3>Errors</h3>
+  <span class="errors">
+    {{ username.errors | json }}
+  </span>
+</div>
