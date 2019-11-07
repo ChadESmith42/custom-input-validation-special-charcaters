@@ -2,7 +2,7 @@
 
 .usernameContainer {
   display: grid;
-  grid-template-rows: [ startTitle ] 32px [ endTitle startInput ] 72px [ endInput startError ] 40px [ endError startButton ] 48px [ endButton startLogs ] 200px [ endLogs startFooter ] auto [ endFooter ];
+  grid-template-rows: [ startTitle ] 32px [ endTitle startInput ] 72px [ endInput startError ] 64px [ endError startButton ] 48px [ endButton startLogs ] 200px [ endLogs startFooter ] auto [ endFooter ];
   row-gap: 40px;
   width: calc(width - 32px);
   margin: 16px 32px 24px 32px;
